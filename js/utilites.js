@@ -8,3 +8,9 @@ function textFieldVlueId(id) {
     const inputTextNumber = parseFloat(inputText);
     return inputTextNumber;
 }
+
+// for date time in history
+function dateTime(){
+    const now = new Date();
+    return now.toLocaleString('en-GB');
+}
