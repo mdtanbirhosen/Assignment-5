@@ -47,7 +47,7 @@
             <div class="navbar-start">
                 <button id="home-btn" class="btn bg-primary-color font-semibold">Home</button>
             </div>
-            <div class="navbar-center">
+            <div class="navbar-center invisible lg:visible">
                 <img src="./assets/logo.png" alt="">
                 <a class="btn btn-ghost text-xl font-semibold">Donate Bangladesh</a>
             </div>
@@ -64,10 +64,46 @@
             <h1>Important FAQ</h1>
         </div>
         <div>
-            
+            <!-- Question 1 -->
+            <div class="container  mx-auto mt-5 p-3 border border-gray-300 rounded-md">
+                <div class="question cursor-pointer bg p-3  rounded-md" id="question1">
+                    What is the Document Object Model (DOM)?
+                </div>
+                <div class="answer mt-3 p-3 rounded-md  hidden" id="answer1">
+                    he Document Object Model (DOM) is a programming interface that allows web developers to interact with HTML and XML documents.
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="container  mx-auto mt-5 p-3 border border-gray-300 rounded-md">
+                <div class="question cursor-pointer p-3  rounded-md" id="question2">
+                    How do you select an element from the DOM?
+                </div>
+                <div class="answer mt-3 p-3 rounded-md  hidden" id="answer2">
+                    You can select elements from the DOM using various methods provided by JavaScript. These methods allow you to access and manipulate HTML elements based on their id, class, tag name, or other attributes. Here’s a rundown of the most commonly used DOM selection methods
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="container  mx-auto mt-5 p-3 border border-gray-300 rounded-md">
+                <div class="question cursor-pointer p-3  rounded-md" id="question3">
+                    What is event delegation in the context of the DOM, and why is it useful?
+
+                </div>
+                <div class="answer mt-3 p-3 rounded-md  hidden" id="answer3">
+                    Event delegation is a technique in the DOM where a single event listener is added to a parent element to manage events for multiple child elements, even if those elements are added dynamically after the page has loaded.
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="container  mx-auto mt-5 p-3 border border-gray-300 rounded-md">
+                <div class="question cursor-pointer p-3  rounded-md" id="question4">
+                    How do you manipulate an element's attributes and styles using the DOM?
+                </div>
+                <div class="answer mt-3 p-3 rounded-md  hidden" id="answer4">
+                    You can manipulate an element's attributes and styles using the DOM through JavaScript by accessing and modifying properties directly.
+                </div>
+            </div>
         </div>
     </main>
-    
+
     <script src="./js/blog.js"></script>
 </body>
 
