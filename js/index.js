@@ -57,6 +57,9 @@ document.getElementById('feni-donate-btn')
          <p class= "font-light text-base">Date:${dateTime()}(Bangladesh Standard Time)</p>
          </div>`
          document.getElementById('history-page').appendChild(div)
+         // modal section starts
+        modalAmount(feniInput)
+        document.getElementById('modal').classList.remove('invisible')
  
     })
 // for card 3
@@ -85,5 +88,15 @@ document.getElementById('quota-donate-btn')
          <p class= "font-light text-base">Date:${dateTime()}(Bangladesh Standard Time)</p></div>
          `
          document.getElementById('history-page').appendChild(div);
+         // modal section starts
+        modalAmount(quotaInput)
+        document.getElementById('modal').classList.remove('invisible')
  
     })
+
+
+
+// to jump blog file
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href = './blog.html'
+})

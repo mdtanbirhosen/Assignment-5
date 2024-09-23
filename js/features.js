@@ -1,7 +1,7 @@
 const historyBtn =document.getElementById('history-page-btn')
 const donationBtn = document.getElementById('donation-page-btn');
 
-donationBtn.addEventListener('click',function(){
+donationBtn.addEventListener('click', function(){
     donationBtn.classList.add('bg-primary-color');
     historyBtn.classList.remove('bg-primary-color')
     document.getElementById('donation-page').classList.remove('hidden');
