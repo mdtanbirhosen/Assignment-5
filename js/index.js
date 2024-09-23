@@ -12,6 +12,7 @@ document.getElementById('noakhali-donate-btn')
             alert('Insufficient balance');
             return;
         }
+
         const noakhaliFinalBalance = noakhaliInput + noakhaliBalance;
         document.getElementById('noakhali-balance').innerText = noakhaliFinalBalance;
         const finalAccountBalance = accountBalance - noakhaliInput;
@@ -25,7 +26,9 @@ document.getElementById('noakhali-donate-btn')
         <p class= "font-light text-base">Date:${dateTime()}(Bangladesh Standard Time)</p>
         </div>`
         document.getElementById('history-page').appendChild(div)
-
+        // modal section starts
+        modalAmount(noakhaliInput)
+        document.getElementById('modal').classList.remove('invisible')
     })
 // for card 2
 document.getElementById('feni-donate-btn')

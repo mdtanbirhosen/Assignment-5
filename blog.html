@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lexend font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#B4F461',
+                        'secondary-text-color': '#575755',
+                        'input-color': '#E8E8E8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* font setup */
+
+
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="lexend-font">
+    <header class="header sticky top-0 backdrop-blur-sm bg-[#f9f7f3b1] text-xl z-40" id="header">
+        <!-- navbar starts here -->
+        <div class="navbar container mx-auto py-5">
+            <div class="navbar-start">
+                <button id="home-btn" class="btn bg-primary-color font-semibold">Home</button>
+            </div>
+            <div class="navbar-center">
+                <img src="./assets/logo.png" alt="">
+                <a class="btn btn-ghost text-xl font-semibold">Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end">
+                <img src="./assets/coin.png" alt="coin image">
+                <div class="font-medium text-secondary-text-color"><span id="account-balance">5500</span>BDT</div>
+            </div>
+        </div>
+        <!-- navbar ends here -->
+    </header>
+
+    <main class="container  mx-auto mt-20">
+
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/utilites.js"></script>
+    <script src="./js/features.js"></script>
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>

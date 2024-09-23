@@ -14,3 +14,10 @@ function dateTime(){
     const now = new Date();
     return now.toLocaleString('en-GB');
 }
+
+// modal section
+function modalAmount(donateAmount) {
+    const p = document.createElement('p');
+    p.innerText = `${donateAmount}`
+    document.getElementById('modal-amount').appendChild(p);
+}

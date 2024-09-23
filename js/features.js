@@ -14,9 +14,6 @@ historyBtn.addEventListener('click',function(){
     document.getElementById('history-page').classList.remove('hidden');
 })
 
-historyBtn.addEventListener('click', function(){
-   
-})
-donationBtn.addEventListener('click', function(){
-
+document.getElementById('close-btn').addEventListener('click',function(){
+    document.getElementById('modal').classList.add('invisible')
 })

@@ -41,11 +41,11 @@
 </head>
 
 <body class="lexend-font">
-    <header class="header sticky top-0 backdrop-blur-sm bg-[#f9f7f3b1] text-xl z-50" id="header">
+    <header class="header sticky top-0 backdrop-blur-sm bg-[#f9f7f3b1] text-xl z-40" id="header">
         <!-- navbar starts here -->
         <div class="navbar container mx-auto py-5">
             <div class="navbar-start">
-                <button class="btn bg-primary-color font-semibold">Blog</button>
+                <button id="blog-btn" class="btn bg-primary-color font-semibold">Blog</button>
             </div>
             <div class="navbar-center">
                 <img src="./assets/logo.png" alt="">
@@ -76,13 +76,16 @@
                             <img src="./assets/coin.png" alt=""><span id="noakhali-balance">0</span>BDT
                         </div>
                         <h3 class="text-xl font-bold mt-4">Donate for Flood at Noakhali, Bangladesh</h3>
-                        <p class="text-secondary-text-color font-light mt-4 mb-6"> The recent floods in Noakhali have caused
+                        <p class="text-secondary-text-color font-light mt-4 mb-6"> The recent floods in Noakhali have
+                            caused
                             significant damage to homes infrastructure. Your donation will help provide essential
                             supplies and to those affected by this disaster. Every contribution, big or small, makes
                             difference. Please join us in supporting the relief efforts and making a positive impact on
                             the lives of those in need.</p>
-                        <input id="noakhali-donate-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-                        <button id="noakhali-donate-btn" class="btn text-xl w-full font-semibold bg-primary-color mt-3 ">Donate Now</button>
+                        <input id="noakhali-donate-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full " />
+                        <button id="noakhali-donate-btn"
+                            class="btn text-xl w-full font-semibold bg-primary-color mt-3 ">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -95,9 +98,16 @@
                             <img src="./assets/coin.png" alt=""><span id="feni-balance">600</span>BDT
                         </div>
                         <h3 class="text-xl font-bold mt-4">Donate for Flood Relief in Feni,Bangladesh</h3>
-                        <p class="text-secondary-text-color font-light mt-4 mb-6"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                        <input id="feni-donate-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-                        <button id="feni-donate-btn" class="btn text-xl w-full font-semibold bg-primary-color mt-3 ">Donate Now</button>
+                        <p class="text-secondary-text-color font-light mt-4 mb-6"> The recent floods in Feni have
+                            devastated local communities, leading to severe disruption and loss. Your generous donation
+                            will help provide immediate aid, including food, clean water, and medical supplies, to those
+                            affected by this calamity. Together, we can offer crucial support and help rebuild lives in
+                            the aftermath of this disaster. Every contribution counts towards making a real difference.
+                            Please consider donating today to assist those in urgent need.</p>
+                        <input id="feni-donate-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full " />
+                        <button id="feni-donate-btn"
+                            class="btn text-xl w-full font-semibold bg-primary-color mt-3 ">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -110,23 +120,43 @@
                             <img src="./assets/coin.png" alt=""><span id="quota-balance">2400</span>BDT
                         </div>
                         <h3 class="text-xl font-bold mt-4">Aid for Injured in the Quota Movement</h3>
-                        <p class="text-secondary-text-color font-light mt-4 mb-6"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                        <input id="quota-donate-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-                        <button id="quota-donate-btn" class="btn text-xl w-full font-semibold bg-primary-color mt-3 ">Donate Now</button>
+                        <p class="text-secondary-text-color font-light mt-4 mb-6"> The recent Quota movement has
+                            resulted in numerous injuries and significant hardship for many individuals. Your support is
+                            crucial in providing medical assistance, rehabilitation, and necessary supplies to those
+                            affected. By contributing, you help ensure that injured individuals receive the care and
+                            support they need during this challenging time. Every donation plays a vital role in
+                            alleviating their suffering and aiding in their recovery. Please consider making a donation
+                            to support these brave individuals in their time of need.</p>
+                        <input id="quota-donate-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full " />
+                        <button id="quota-donate-btn"
+                            class="btn text-xl w-full font-semibold bg-primary-color mt-3 ">Donate Now</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- cards ends here -->
-         <!-- history starts here -->
-         <div id="history-page" class="hidden container mx-auto  mt-12">
+        <!-- modal section starts here -->
+        <div id="modal" class="invisible flex justify-center items-center h-screen w-full z-50  absolute left-0 top-0 bg-[#00000048]">
+            <div class=" text-center flex flex-col gap-5 border border-slate-900 p-7 rounded-3xl bg-white">
+                <h2 class="font-bold text-4xl">Congrates!</h2>
+                <div id="modal-amount" class="flex justify-center"><img src="./assets/coin.png" alt=""> </div>
+                <p class="">You Have Donated for Humankind</p>
+                <div class="font-bold text-xl">Successfully</div>
+                <button id="close-btn" class="btn ">close confirmation</button>
+            </div>
+        </div>
+        <!-- modal section ends here -->
+        <!-- history starts here -->
+        <div id="history-page" class="hidden container mx-auto  mt-12">
 
-         </div>
-         <!-- history ends here -->
+        </div>
+        <!-- history ends here -->
     </main>
     <script src="./js/index.js"></script>
     <script src="./js/utilites.js"></script>
     <script src="./js/features.js"></script>
+    <script src="./js/blog.js"></script>
 </body>
 
 </html>
