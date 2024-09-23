@@ -3,16 +3,21 @@ document.getElementById('noakhali-donate-btn')
     .addEventListener('click', function () {
         const noakhaliInput = inputFieldvalueId('noakhali-donate-input');
         const noakhaliBalance = textFieldVlueId('noakhali-balance');
+        const accountBalance = textFieldVlueId('account-balance');
         if(isNaN(noakhaliInput) || noakhaliInput <= 0){
             alert('Invalid Donation Amount');
             return;
         }
-        const accountBalance = textFieldVlueId('account-balance');
-        if(noakhaliInput > accountBalance){
+        else if(noakhaliInput > accountBalance){
             alert('Insufficient balance');
             return;
         }
-
+        // cheak is there any string or not
+        const input = document.getElementById('noakhali-donate-input').value;
+        if (stringCheaker(input) === true) {
+            alert("Invalid Donation Amount")
+            return;
+        }
         const noakhaliFinalBalance = noakhaliInput + noakhaliBalance;
         document.getElementById('noakhali-balance').innerText = noakhaliFinalBalance;
         const finalAccountBalance = accountBalance - noakhaliInput;
@@ -44,8 +49,14 @@ document.getElementById('feni-donate-btn')
             alert('Insufficient balance');
             return;
         }
-        document.getElementById('feni-balance').innerText = feniFinalBalance;
+        // cheak is there any string or not
+        const input = document.getElementById('feni-donate-input').value;
+        if (stringCheaker(input) === true) {
+            alert("Invalid Donation Amount")
+            return;
+        }
         const feniFinalBalance = feniInput + feniBalance;
+        document.getElementById('feni-balance').innerText = feniFinalBalance;
         const finalAccountBalance = accountBalance - feniInput;
         document.getElementById('account-balance').innerText = finalAccountBalance
          // history part of card 2
@@ -74,6 +85,12 @@ document.getElementById('quota-donate-btn')
         const accountBalance = textFieldVlueId('account-balance');
         if(quotaInput > accountBalance){
             alert('Insufficient balance');
+            return;
+        }
+        // cheak is there any string or not
+        const input = document.getElementById('quota-donate-input').value;
+        if (stringCheaker(input) === true) {
+            alert("Invalid Donation Amount")
             return;
         }
         const quotaFinalBalance = quotaInput + quotaBalance;

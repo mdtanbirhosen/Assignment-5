@@ -20,3 +20,16 @@ function modalAmount(donateAmount) {
     p.innerText = `${donateAmount}`
     document.getElementById('modal-amount').appendChild(p);
 }
+
+// string cheaking method is here
+function stringCheaker(input) {
+    const stringWord = "abcdefghijklmnopqrstuvwxyz"
+    const stringArray = stringWord.split('');
+    const array = input.toLowerCase().split('');
+    for(str of array){
+        if (stringArray.includes(str)){
+            
+            return true;
+        }
+    }
+}
