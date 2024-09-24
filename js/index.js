@@ -61,7 +61,7 @@ document.getElementById('feni-donate-btn')
         document.getElementById('account-balance').innerText = finalAccountBalance
          // history part of card 2
          const div = document.createElement('div');
-         div.style.cssText = "border:1px solid #E8E8E8 ; border-radious:16px;";
+         div.style.cssText = "border:1px solid #E8E8E8 ; border-radius: 16px; margin-bottom: 24px;";
          div.innerHTML = `
          <div class= "p-8">
          <h4 class="font-bold text-xl">${feniInput} Taka is Donated for Flood Relief in Feni, Bangladesh</h4>
@@ -99,7 +99,7 @@ document.getElementById('quota-donate-btn')
         document.getElementById('account-balance').innerText = finalAccountBalance
          // history part of card 3
          const div = document.createElement('div');
-         div.style.cssText = "border:1px solid #E8E8E8 ; border-radious:16px;";
+         div.style.cssText = "border:1px solid #E8E8E8 ; border-radius: 16px; margin-bottom: 24px;";
          div.innerHTML = `
          <div class= "p-8"><h4 class="font-bold text-xl">${quotaInput} Taka is Donated for Aid who Injured in the Quota Movement, Bangladesh</h4>
          <p class= "font-light text-base">Date:${dateTime()}(Bangladesh Standard Time)</p></div>
