@@ -20,6 +20,7 @@ document.getElementById('question3')
         const answer = document.getElementById("answer3");
             answer.classList.toggle("hidden");
     });
+    
     // question 4
 document.getElementById('question4')
 .addEventListener('click', function () {
