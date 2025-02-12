@@ -41,25 +41,49 @@
 </head>
 
 <body class="lexend-font">
-    <header class="header sticky top-0 backdrop-blur-sm bg-[#f9f7f3c5] text-xl z-40" id="header">
-        <!-- navbar starts here -->
-        <div class="navbar container mx-auto py-5">
-            <div class="navbar-start">
-                <button id="blog-btn" class="btn bg-primary-color text-lg font-semibold">Blog</button>
+    <header>
+        <div class="header sticky top-0 backdrop-blur-sm bg-[#f9f7f3c5] text-xl z-40" id="header">
+            <!-- navbar starts here -->
+            <div class="navbar container mx-auto py-5">
+                <div class="navbar-start">
+                    <button id="blog-btn" class="btn bg-primary-color text-lg font-semibold">Blog</button>
+                </div>
+                <div class="navbar-center hidden lg:block ">
+                    <div class="flex items-center gap-4"><img src="./assets/logo.png" alt="">
+                        <a class=" text-xl font-semibold">Donate Bangladesh</a>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <img src="./assets/coin.png" alt="coin image">
+                    <div class="font-medium text-secondary-text-color"><span id="account-balance">5500</span>BDT</div>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:block ">
-                <div class="flex items-center gap-4"><img src="./assets/logo.png" alt="">
-                    <a class=" text-xl font-semibold">Donate Bangladesh</a></div>
-            </div>
-            <div class="navbar-end">
-                <img src="./assets/coin.png" alt="coin image">
-                <div class="font-medium text-secondary-text-color"><span id="account-balance">5500</span>BDT</div>
-            </div>
+            <!-- navbar ends here -->
+
         </div>
-        <!-- navbar ends here -->
+        <!-- Banner section work start -->
+        <section class="">
+            <div class="hero h-[400px]  lg:h-[600px]"
+                style="background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjIxMWJhdGNoMTEta2liLTMwNC1jaGFyaXR5XzIuanBn.jpg);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-lg">
+                        <h1 class="mb-5 md:text-5xl text-3xl font-bold">Help Others Please</h1>
+                        <p class="mb-5">
+                            a compassionate initiative dedicated to spreading kindness and support. Whether through
+                            charity, volunteering, or simple acts of goodwill, we believe in making a positive impact on
+                            people's lives.
+                        </p>
+                        <button class="btn bg-primary-color">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner section work end -->
     </header>
 
     <main class="container px-2 mx-auto mt-20">
+
         <!-- donation and history button -->
         <div class="flex justify-center gap-4 text-xl text-secondary-text-color font-medium">
             <button id="donation-page-btn" class="btn text-xl bg-primary-color">Donation</button>
@@ -137,8 +161,10 @@
         </div>
         <!-- cards ends here -->
         <!-- modal section starts here -->
-        <div id="modal" class="invisible flex justify-center items-center h-screen w-full z-50 fixed left-0 top-0 bg-[#00000048]">
-            <div class=" text-center flex flex-col gap-5 shadow-2xl px-2 py-2 rounded-lg  lg:py-7 lg:px-20 lg:rounded-3xl bg-white">
+        <div id="modal"
+            class="invisible flex justify-center items-center h-screen w-full z-50 fixed left-0 top-0 bg-[#00000048]">
+            <div
+                class=" text-center flex flex-col gap-5 shadow-2xl px-2 py-2 rounded-lg  lg:py-7 lg:px-20 lg:rounded-3xl bg-white">
                 <h2 class="font-bold text-4xl">Congrates!</h2>
                 <div id="modal-amount" class="flex justify-center"><img src="./assets/coin.png" alt=""> </div>
                 <p class="">You Have Donated for Humankind</p>
@@ -153,10 +179,28 @@
         </div>
         <!-- history ends here -->
     </main>
+    <!-- footer work is start -->
+    <footer class="bg-primary-color text-base-content container py-4 mx-auto mt-20 px-32">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h2 class="text-xl font-bold">Help Others, Please</h2>
+                <p class="text-sm">Spreading kindness and support to make the world a better place.</p>
+            </div>
+            <ul class="flex flex-col justify-center   mt-4 md:mt-0">
+                <li class="">About Us</li>
+                <li class="">Contact</li>
+                <li class="">Donate</li>
+            </ul>
+            <div class="mt-4 md:mt-0">
+                <p class="text-sm">&copy; 2025 Help Others, Please. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer work is end -->
     <script src="./js/index.js"></script>
     <script src="./js/utilites.js"></script>
     <script src="./js/features.js"></script>
-    
+
 </body>
 
 </html>
